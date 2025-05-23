@@ -1,0 +1,66 @@
+#empleados {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px; 
+}
+
+#campo_empleado {
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 1.5rem;
+    box-shadow: 2px 3px 20px 2px rgba(137, 43, 226, 0.6);
+}
+
+#campo_nombre {
+    text-align: center;
+    text-transform: capitalize;
+    padding: 0;
+    margin: 0;
+    border-radius: 10px 10px 0 0;
+    padding: 10px;
+    font-size: 3.5rem;
+    background-color: rgba(137, 43, 226, 0.6);
+}
+
+#activo {
+    background-color: rgba(226, 43, 43, 0.6);
+    color: black;
+}
+
+
+/* media query   */
+
+@media screen and (max-width:480px) and (orientation: portrait) {
+    
+    #empleados {
+        justify-content: center;
+    }
+
+    #campo_empleado{
+        font-size: 1.5rem;
+    }
+
+    #campo_nombre {
+        font-size: 2rem;
+    }
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) and (orientation: portrait) {
+    #empleados {
+        justify-content: space-around;
+    }
+
+    #campo_empleado{
+        font-size: 2rem;
+    }
+
+    #campo_nombre {
+        font-size: 2.5rem;
+    }
+}
